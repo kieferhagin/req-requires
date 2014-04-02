@@ -30,7 +30,7 @@ app.get('/testRoute', function(req, res){
 ```
 
 ### Validators
-```javascript
+```javascript 
 req.requires.property('auth_provider').toExist();
 req.requires.property('body.email').toExist();
 req.requires.property('params.id').toMatch(/^[0-9a-fA-F]{24}$/);
